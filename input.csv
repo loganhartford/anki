@@ -1,38 +1,9 @@
-﻿What is the primary property of a real time system (RTS) ?,Guarantees a worst case latency for the system.,Embedded MTE325
-Define latency.,The delay the between the arrival of the request and the initiation of the service.,Embedded MTE325
-What is the throughput of a processor?,A measure of how many things can be processed per unit of time.,Embedded MTE325
-What is a device driver?,"The software associated with a particular device. Includes data structures, initialization functions, I/O functions and ISRs",Embedded MTE325
-Synchronization methods: what is a blind cycle? What is its advantage? What is its disadvantage? It is CPU or device oriented?,Software waits some amount of time and then acts on the data whether or not the device is ready. *Simple to implement *Can cause data corruption form interruption *CPU oriented,Embedded MTE325
-Synchronization methods: what is occasional polling? It is CPU or device oriented?,Device status is checked at the convenience of the designer. *CPU oriented,Embedded MTE325
-Synchronization methods: what is periodic polling? It is CPU or device oriented?,Device is checked after a pre-determined amount of time (TMR). *CPU oriented,Embedded MTE325
-Synchronization methods: what is tight polling?  What is the benefit? It is CPU or device oriented?,The software continuously checks the I/O status and waits for the device to be done. *Can do useful work while waiting. *Device oriented,Embedded MTE325
-Synchronization methods: what is interrupt handling? It is CPU or device oriented?,Generates hardware interrupt to request service immediately. *Device oriented,Embedded MTE325
-What are three key things to note when writing ISRs?,*Should be as fast as possible. *Avoid blocking I/O functions. *Don't use print statements in and ISR,Embedded MTE325
-What is an embedded system?,A special-purpose computer system designed to perform a task without the user's knowledge of its existence.,Embedded MTE325
-What is hardware/software co-design?,The term given to the task of simultaneously designing hardware and software components of a combined hardware/software system.,Embedded MTE325
-What is an ASIC?,Application specific integrated circuit.,Embedded MTE325
-What are X ways programming an embedded system is sifferent than programming and app?,*Code for specific tasks *Only have a basic or no OS *Writing at a lower level *More likely to be safety critical,Embedded MTE325
-Heat Transfer,is thermal energy in transit due to a spatial temperature difference.,Mechanical ME353
-How does conduction work in liquids and solids?,Lattice vibrations and free electrons ,
-How does conduction work in gasers?, Molecules act like energy vessels that convey kinetic and internal energy as they travel between surfaces,
-What is conduction?,Heat Transfer due to molecular motion,
-What is convection?,"Heat transfer between a surface and a fluid due to conduction, augmented by bulk fluid motion",Mechanical ME353
-What is radiation?,Heat transfer via photons,Mechanical ME353
-How does heat transfer relate to thermodynamics?,Heat transfer is required by the 2nd law of thermodynamics and the 1st law is used in heat transfer analysis.,Mechanical ME353
-What law governs conduction?,Fourier's Law,Mechanical ME353
-What is thermal conducivity?,Thermal conductivity is defined as the ability of a material to conduct heat from its one side to the other,Mechanical ME353
-What is contact resistance?,Contact resistance is thermal resistance between two conducting solids created by imperfect thermal contact.,Mechanical ME353
-Define mass,a property of an element that stores the kinetic energy of translational motion.,Mechanical ME360
-What is the prime interest rate?,the interest rate charged by banks to their most creditworthy customers,Economics MSCI261
-What is simple interest,Interest without compounding,Economics MSCI261
-What is nomial interest,Is stated for the full period,Economics MSCI261
-What is effective interest rate?,Results from the compounding based on the sub periods,Economics MSCI261
-What is the market value of an asset?,Actual value the asset will sell for,Economics MSCI261
-What is the book value of an asset?,The value calculated from a depreciation model,Economics MSCI261
-What is the salvage value of an asset?,Actual or estimated value at the end of its life,Economics MSCI261
-What is the scrap value of an asset?,Actual or estimated value of the materials at the end of its life,Economics MSCI261
-What assumption does straight line depreciation make?,Assumes the rate of loss of value is constant over time,Economics MSCI261
-What assumption does balance depreciation make?,Assumes the loss of value in a period is in constant proportion to the value of the asset at that time,Economics MSCI261
-What is mathematical equivalence?,Use of interest formulas and market interest rates to determine equivalence of money across time,Economics MSCI261
-What is decision equivalence?,The rate is determined by the decision makers willingness to accept the offer,Economics MSCI261
-What is market equivalence?,Decision makers exchange different cashflows in the market at zero cost,Economics MSCI261
+﻿What are .c files used for in C programming?,".c files are source files in C that contain the actual code, including functions and program logic.",Embedded MTE325
+What is the purpose of .h files in C?,".h files, or header files, typically contain declarations of functions, macros, and types (like structs) to be used in .c files.",Embedded MTE325
+Define a function in the context of C programming.,"In C, a function is a block of code that performs a specific task, capable of taking input, processing it, and returning output.",Embedded MTE325
+What are macros in C programming?,"Macros are a way to define reusable snippets or values using the #define directive, which the preprocessor replaces with their values or code snippets before compilation.",Embedded MTE325
+What is a struct in C?,"A struct, or structure, is a user-defined data type in C that groups different types of variables under a single name, useful for creating complex data structures.",Embedded MTE325
+What are pointers in C programming?,"Pointers are variables that store the memory address of another variable, allowing for dynamic memory allocation, efficient array handling, and creation of complex data structures.",Embedded MTE325
+Give an example of a macro in C.,"An example of a macro in C could be #define PI 3.14159, which defines PI as a constant that can be reused in the code.",Embedded MTE325
+Why are structs important in C?,"Structs are important for organizing complex data, representing objects or entities in a program, and for creating data structures like linked lists and trees.",Embedded MTE325
+How do pointers enhance C programming?,"Pointers provide flexibility and power for dynamic memory management, manipulating arrays and strings, and handling complex data structures, which is crucial for efficient programming.",Embedded MTE325
