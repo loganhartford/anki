@@ -1,38 +1,31 @@
-﻿What is the primary property of a real time system (RTS) ?,Guarantees a worst case latency for the system.,Embedded MTE325
-Define latency.,The delay the between the arrival of the request and the initiation of the service.,Embedded MTE325
-What is the throughput of a processor?,A measure of how many things can be processed per unit of time.,Embedded MTE325
-What is a device driver?,"The software associated with a particular device. Includes data structures, initialization functions, I/O functions and ISRs",Embedded MTE325
-Synchronization methods: what is a blind cycle? What is its advantage? What is its disadvantage? It is CPU or device oriented?,Software waits some amount of time and then acts on the data whether or not the device is ready. *Simple to implement *Can cause data corruption form interruption *CPU oriented,Embedded MTE325
-Synchronization methods: what is occasional polling? It is CPU or device oriented?,Device status is checked at the convenience of the designer. *CPU oriented,Embedded MTE325
-Synchronization methods: what is periodic polling? It is CPU or device oriented?,Device is checked after a pre-determined amount of time (TMR). *CPU oriented,Embedded MTE325
-Synchronization methods: what is tight polling?  What is the benefit? It is CPU or device oriented?,The software continuously checks the I/O status and waits for the device to be done. *Can do useful work while waiting. *Device oriented,Embedded MTE325
-Synchronization methods: what is interrupt handling? It is CPU or device oriented?,Generates hardware interrupt to request service immediately. *Device oriented,Embedded MTE325
-What are three key things to note when writing ISRs?,*Should be as fast as possible. *Avoid blocking I/O functions. *Don't use print statements in and ISR,Embedded MTE325
-What is an embedded system?,A special-purpose computer system designed to perform a task without the user's knowledge of its existence.,Embedded MTE325
-What is hardware/software co-design?,The term given to the task of simultaneously designing hardware and software components of a combined hardware/software system.,Embedded MTE325
-What is an ASIC?,Application specific integrated circuit.,Embedded MTE325
-What are X ways programming an embedded system is sifferent than programming and app?,*Code for specific tasks *Only have a basic or no OS *Writing at a lower level *More likely to be safety critical,Embedded MTE325
-Heat Transfer,is thermal energy in transit due to a spatial temperature difference.,Mechanical ME353
-How does conduction work in liquids and solids?,Lattice vibrations and free electrons ,
-How does conduction work in gasers?, Molecules act like energy vessels that convey kinetic and internal energy as they travel between surfaces,
-What is conduction?,Heat Transfer due to molecular motion,
-What is convection?,"Heat transfer between a surface and a fluid due to conduction, augmented by bulk fluid motion",Mechanical ME353
-What is radiation?,Heat transfer via photons,Mechanical ME353
-How does heat transfer relate to thermodynamics?,Heat transfer is required by the 2nd law of thermodynamics and the 1st law is used in heat transfer analysis.,Mechanical ME353
-What law governs conduction?,Fourier's Law,Mechanical ME353
-What is thermal conducivity?,Thermal conductivity is defined as the ability of a material to conduct heat from its one side to the other,Mechanical ME353
-What is contact resistance?,Contact resistance is thermal resistance between two conducting solids created by imperfect thermal contact.,Mechanical ME353
-Define mass,a property of an element that stores the kinetic energy of translational motion.,Mechanical ME360
-What is the prime interest rate?,the interest rate charged by banks to their most creditworthy customers,Economics MSCI261
-What is simple interest,Interest without compounding,Economics MSCI261
-What is nomial interest,Is stated for the full period,Economics MSCI261
-What is effective interest rate?,Results from the compounding based on the sub periods,Economics MSCI261
-What is the market value of an asset?,Actual value the asset will sell for,Economics MSCI261
-What is the book value of an asset?,The value calculated from a depreciation model,Economics MSCI261
-What is the salvage value of an asset?,Actual or estimated value at the end of its life,Economics MSCI261
-What is the scrap value of an asset?,Actual or estimated value of the materials at the end of its life,Economics MSCI261
-What assumption does straight line depreciation make?,Assumes the rate of loss of value is constant over time,Economics MSCI261
-What assumption does balance depreciation make?,Assumes the loss of value in a period is in constant proportion to the value of the asset at that time,Economics MSCI261
-What is mathematical equivalence?,Use of interest formulas and market interest rates to determine equivalence of money across time,Economics MSCI261
-What is decision equivalence?,The rate is determined by the decision makers willingness to accept the offer,Economics MSCI261
-What is market equivalence?,Decision makers exchange different cashflows in the market at zero cost,Economics MSCI261
+﻿How would you define Machine Learning?,Machine learning is about building system that can learn from data and get better at a task.,ML HOML
+Can you name four types of problems where it shines?,*Complex problems with no algorithmic solution *Replace a long list of hand tuned rules *Systems that adapt to fluctuating environments *To help humans learn,ML HOML
+What is a labeled training set?,A data set which contains the desired solution,ML HOML
+What are the two most common supervised tasks?,*Regression *Classification,ML HOML
+What is regression used for?,When the output is continuous like the price of a house,ML HOML
+What is classification used for?,,ML HOML
+Can you name four common unsupervised tasks?,*Clustering *Visualization *Dimensionality reduction*Associate rule learning:,ML HOML
+What is clustering used for?,Grouping the data based on similarities.,ML HOML
+What is visualization used for?,Tries to maintain the structure of the data while visually revealing clusters and trends.,ML HOML
+What is anomaly detection used for?,Detecting outliers or unusual behavior like credit card transactions,ML HOML
+What is dimensionality reduction used for?,Simplify the data without loosing critical information,ML HOML
+What is associate rule learning used for?,Tries to fund unexpected relationships between features,ML HOML
+What type of Machine Learning algorithm would you use to allow a robot to walk in various unknown terrains?,Reinforcement learning.,ML HOML
+What type of algorithm would you use to segment your customers into multiple groups?,Unsupervised clustering algorithm if you don't know what clusters you want or a supervised classification algorithm if you do know.,ML HOML
+Would you frame the problem of spam detection as a supervised learning problem or an unsupervised learning problem?,Supervised learning problem.,ML HOML
+What is an online learning system?,Is a system that can learn incrementally.,ML HOML
+What are online learning systems used for,They can be used to: *Adapt to changing environments. *Train on very large quantities of data.,ML HOML
+What is out-of-core learning?,This is then the model is trained on the data in steps because the whole data set is too large to fit in memory at one time. It used online learning techniques.,ML HOML
+What type of learning algorithm relies on a similarity measure to make predictions?,An instance-based learning system.,ML HOML
+How does an instance based learning system make predictions?,"An instance-based learning system learns the training data by heart; then, when given a new instance, it uses a similarity measure to find the most similar learned instances and uses them to make predictions.",ML HOML
+What is the difference between a model parameter and a learning algorithm’s hyperparameter?,"The hyperparameter is not trained, it is set at the beginning of training. It is a parameter of the learning algorithm itself, not the model.",ML HOML
+What do model-based learning algorithms search for? ,Model-based learning algorithms search for an optimal value for the model parameters such that the model will generalize well to new instances.,ML HOML
+What is the most common strategy model-based learning algorithms use to succeed?,"We usually train such systems by minimizing a cost function that measures how bad the system is at making predictions on the training data, plus a penalty for model complexity if the model is regularized.",ML HOML
+How do model-based learning algorithms make predictions?,"To make predictions, we feed the new instance’s features into the model’s prediction function, using the parameter values found by the learning algorithm.",ML HOML
+Can you name four of the main challenges in Machine Learning?,*Insufficient data quantity *Non-representative training data *Poor quality data *Irrelevant features *Simple models that underfit the training data *Complex models that overfit the training data,ML HOML
+"If your model performs great on the training data but generalizes poorly to new instances, what is happening?",This means that your model is likely overfitting the data.,ML HOML
+What are three possible solutions to a model that is overfitting the data?,*Increase the amount of training data *Simplify the model by selecting one with fewer parameters *Reduce the noise in the training data,ML HOML
+What is a test set and why would you want to use it?,"A test set is used to estimate the generalization error that a model will make on new instances, before the model is launched in production.",ML HOML
+What is the purpose of a validation set?,A validation set is used to compare models. It makes it possible to select the best model and tune the hyperparameters.,ML HOML
+What can go wrong if you tune hyperparameters using the test set?,If you tune you hyperparameters using only the test set then you risk overfitting the test set and the generalization error will be optimistic.,ML HOML
+What is cross-validation and why would you prefer it to a validation set?,Cross-validation is a technique that makes it possible to compare models (for model selection and hyperparameter tuning) without the need for a separate vali‐ dation set. This saves precious training data.,ML HOML
